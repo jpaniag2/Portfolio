@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html>
+<title>PaniaguaJulioPortfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" type="x-icon" style="border-radius: 50%;" href="tab_icon.png">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-DYW9SY23LP"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-DYW9SY23LP');
+</script>
+
+<style>
+  body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+  .w3-row-padding img {margin-bottom: 12px}
+  .bgimg {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('profile_image.png');
+    min-height: 100%;
+  }
+  ul{
+    list-style-type: square;
+
+  }
+
+  .project-images:hover{
+    opacity: 85%;
+  }
+
+  .myFrame{
+    align-content: center;
+  }
+
+</style>
+<body>
+
+<!-- Sidebar with image -->
+<nav class="w3-sidebar w3-collapse w3-animate-left" style="width:15%; background-color:	#F8F8F8;">
+  <div>    <img src="profile_image.png" alt="Profile Image" style="border-radius: 50%; width: 100%; padding: 10%;"></div>
+
+  <div class="w3-white w3-opacity w3-large w3-right w3-text-black w3-bar-block" style="width: 100%; text-align: center;">
+
+    <a href="#resume" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-bar-block w3-hover-grey"><i class="fa fa-paper-plane fa-fw w3-margin-right"></i>Resume</a>
+    <a href="#projects" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-bar-block w3-hover-grey"><i class="fa fa-th-large fa-fw w3-margin-right"></i>Projects</a>
+    <a href="https://www.linkedin.com/in/juliopaniaguaalanis/" target="_blank" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-linkedin w3-hover-grey"></i> LinkedIn</a>
+
+  </div>
+ 
+</nav>
+
+<!-- Hidden Sidebar (reveals when clicked on menu icon)-->
+<nav class="w3-sidebar w3-grey w3-animate-right w3-large" style="display: none; opacity: 0.95; padding-top:150px;right:0;z-index:2" id="mySidebar">
+  <a href="javascript:void(0)" onclick="closeNav()" class="w3-button w3-grey w3-xxlarge w3-display-topright" style="padding:0 12px;">
+    <i class="fa fa-remove"></i>
+  </a>
+
+  <div class="w3-bar-block w3-center">
+
+    <a href="#resume" class="w3-bar-item w3-button w3-text-white w3-hover-black w3-bar-block" onclick="closeNav()">Resume</a>
+    <a href="#projects" class="w3-bar-item w3-button w3-text-white w3-hover-black w3-bar-block" onclick="closeNav()">Projects</a>
+    <a href="https://www.linkedin.com/in/juliopaniaguaalanis/" target="_blank" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-linkedin w3-hover-grey"></i> LinkedIn</a>
+
+
+  </div>
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+
+
+<!-- Page Content -->
+<div class="w3-main w3-padding-large" style="margin-left:15%">
+
+  <span class="w3-button w3-top w3-white w3-hide-large w3-xxlarge w3-text-grey w3-hover-text-black" style="width:auto;right:0;" onclick="openNav()"><i class="fa fa-bars"></i></span>
+  <!-- Header -->
+  <header class="w3-container w3-center" id="resume">
+
+    <div class="w3-padding-32 w3-content">
+
+      <h1 class="w3-jumbo"><b>Julio Paniagua</b></h1>
+
+    </div>
+
+  </header>
+
+
+
+  <!-- Portfolio Section -->
+
+  <!-- Resume Section -->
+  <div class=" w3-padding-64 w3-content w3-center">
+  
+    <div style="align-content: center;"><iframe id="myFrame" style="display:none" width="80%" height="650px"></iframe></div>
+          <input type="button" value="View Resume" onclick = "openPdf()"/>
+  
+    
+
+        <!-- End Portfolio Section -->
+  </div>
+
+    <!-- Grid for photos -->
+
+
+    <h3 class="w3-text-grey w3-center w3-padding-64">Projects</h3>
+    <hr class="w3-opacity" id="projects">
+
+    <!-- Grid for photos 2 -->
+    <div class="w3-row-padding" style="margin:0 -16px">
+
+
+      <div class="w3-text-grey">
+
+        <div class="w3-padding-16 w3-center">
+
+          <p><b>Crumble</b></p>
+          <div class="w3-half">
+            <iframe src="https://marvelapp.com/prototype/a01f0f7?emb=1&iosapp=false&frameless=false" width="253" height="464" allowTransparency="true" frameborder="0" style="-webkit-clip-path: inset(2px 2px); clip-path: inset(2px 2px);"></iframe>
+          </div>
+
+      <div class=" w3-half w3-left-align" style="padding-left: 100px; padding-right: 100px">
+          
+            <p>Currently developing a social media platform where users can log & rate restaurants visited and share food recommendations.</p>
+            <p><b>Ongoing Experience:</b><br>  
+        <i>
+             <ul>
+               <li>Native iOS Development</li> 
+               <li>Coding in Swift Language using Xcode IDE.</li>
+               <li>Using version control to commit, push, and pull requests.</li>
+               <li>Agile.</li>
+               <li>Object Oriented Programming(OOP).</li>
+               <li>Claiming & assigning tickets.</li>
+             </ul>
+         </i>
+
+       </div>
+
+        </div>
+
+
+
+      </div>
+      <!-- End photo grid 2 -->
+
+
+    <div class="w3-row-padding w3-" style="margin:0 -16px">
+
+      <hr class="w3-opacity">
+
+      <p class="w3-center">** Click picture to see project repository(GitHub)/website **</p>
+
+      <div class="w3-half w3-text-grey">
+
+        <!-- Wag App -->
+
+
+        <div class="w3-padding-16 w3-center">
+          <p><b>Wag App</b></p>
+          <a href="https://github.com/jpaniag2/WagApp" target="_blank"><img src="WagApp.png" class="project-images" style="width:100%"></a>
+
+        </div>
+
+
+        <div>
+          
+            <p> Designed & developed a Native Android application that helps users find/adopt a pet from a local shelter and keep track of their pet’s health.</p>
+            <br>
+            <p><b>Experience:</b><br></p>
+
+          <i>
+              <ul>
+                <li>Native Android Development.</li>
+                <li>Coding in Java & Kotlin using Android Studio IDE.</li>
+                <li>Using version control to commit, push, and pull requests.</li>
+                <li>Agile.</li>
+                <li>Object Oriented Programming(OOP).</li>
+                <li>Claiming & assigning user stories.</li>
+              </ul>
+  
+              <br>
+              <br>
+          </i>
+
+        </div>
+        <br>
+
+        <hr class="w3-opacity">
+
+        <!-- Small Business Website Project -->
+
+
+        <div class="w3-padding-16 w3-center">
+          <p><b>Amadors Party Rentals</b></p>
+          <a href="https://webpages.uncc.edu/jpaniag1/Exercise/Amadors/Index.html" target="_blank"><img src="WebsiteGallery.png" class="project-images" style="width:100%"></a>
+
+        </div>
+
+        <div>
+          
+            <br>
+            <p> Designed and developed a website for a local small business.</p>
+            <br>
+            <br>
+
+            <p><b>Experience:</b><br></p>
+
+         <i>
+            <ul>
+              <li>Designing and coding a user-friendly business website</li>
+              <li>Coding in HTML5, CSS, & JavaScript using Visual Studio Code IDE</li>
+              <li>Working with FireBase web hosting services & Google Domains.</li>
+            </ul>
+
+
+          </i>
+        </div>
+        <br>
+
+
+      </div>
+
+      <div class="w3-half w3-text-grey">
+        <!-- Gym Membership System -->
+
+
+        <div class="w3-padding-16 w3-center">
+          <p><b>Gym Membership System</b></p>
+          <a href="https://github.com/jpaniag2/Gym" target="_blank"><img src="GymMembership.png" class="project-images" style="width:100%"></a>
+
+        </div>
+
+        <div>
+          
+            <p> Designed & developed a console-based application that helps keep track of gym members, payments, membership enrollments, and membership status.</p>
+            <br>
+            <p><b>Experience:</b><br></p>
+         <i>
+            <ul>
+              <li>Back-end programing.</li>
+              <li>Creating & designing set of classes.</li>
+              <li>Object Oriented Programming(OOP).</li>
+              <li>Coding in Java using NetBeans IDE.</li>
+            </ul>
+
+         </i>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <hr class="w3-opacity">
+        <!-- Cindy's Catering -->
+
+
+        <div class="w3-padding-16 w3-center">
+          <p><b>Cindy's Catering</b></p>
+          <a href="https://github.com/jpaniag2/CindysCatering" target="_blank"><img src="CindysCatering1.png" class="project-images" style="width:100%"></a>
+          <br>
+          <br>
+
+        </div>
+
+        <div>
+          
+            <p> Designed & developed a Windows Form application that made it easier for a catering business to manage customer orders.</p>
+            <br>
+            <p><b>Experience:</b><br> </p>
+
+         <i>
+            <ul>
+              <li>Designing GUI in Windows Form</li>
+              <li>.NET application; Object Oriented Programming.</li>
+              <li>Coding back-end in C# using Visual Studio IDE.</li>
+            </ul>
+         </i>
+        </div>
+        <br>
+
+
+
+
+      </div>
+      <!-- End photo grid -->
+
+    </div>
+
+
+    </div>
+
+
+
+
+
+  <!-- Contact Section -->
+  <div class="w3-padding-32 w3-content w3-text-grey" id="contact" style="margin-bottom:64px">
+
+
+    <!-- End Contact Section -->
+  </div>
+
+  <!-- Footer -->
+  <footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-opacity w3-xlarge" style="margin:-24px">
+    <p class="w3-medium">Copyright © 2021 Paniagua-Julio Inc.</p>
+    <p class="w3-medium">All rights reserved.</p>
+    <p class="w3-small">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+    <!-- End footer -->
+  </footer>
+
+  <!-- END PAGE CONTENT -->
+</div>
+
+<script>
+  // Open and close sidebar
+  function openNav() {
+    document.getElementById("mySidebar").style.width = "60%";
+    document.getElementById("mySidebar").style.display = "block";
+  }
+
+  function closeNav() {
+    document.getElementById("mySidebar").style.display = "none";
+  }
+
+  function openPdf()
+{
+var omyFrame = document.getElementById("myFrame");
+omyFrame.style.display="block";
+omyFrame.style="align-items: center";
+omyFrame.src = "PaniaguaJulio.pdf#toolbar=0";
+}
+
+
+
+</script>
+
+</body>
+</html>
